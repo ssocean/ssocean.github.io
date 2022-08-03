@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Penghai Zhao</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<!--
+		Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+		Set it to "right-sidebar" to, you guessed it, position it on the right.
+	-->
+	<body class="left-sidebar">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Content -->
+					<div id="content">
+						<div class="inner">
+					
+							<!-- Post -->
+								<article class="box post post-excerpt">
+									<header>
+										<!--
+											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+											if they get too long. You can also remove the <p> entirely if you don't
+											need a subtitle.
+										-->
+										<h2><a href="#">Alleviating pseudo-touching in attention U-Net-based binarization approach for the historical Tibetan document images</a></h2> 
+										<p>P Zhao, W Wang, G Zhang, Y Lu</p>
+										<p>Neural Computing and Applications</p>
+									</header>
+									<div class="info">
+										<!--
+											Note: The date should be formatted exactly as it's shown below. In particular, the
+											"least significant" characters of the month should be encapsulated in a <span>
+											element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+											Oh, and if you don't need a date for a particular page or post you can simply delete
+											the entire "date" element.
+											
+										-->
+										<span class="date"><span class="month">2021<span>y</span></span> <span class="day">Oct</span></span>
+										<!--
+											Note: You can change the number of list items in "stats" to whatever you want.
+										-->
+										<!-- <ul class="stats">
+											<li><a href="#" class="icon fa-comment">16</a></li>
+											<li><a href="#" class="icon fa-heart">32</a></li>
+											<li><a href="#" class="icon fa-twitter">64</a></li>
+											<li><a href="#" class="icon fa-facebook">128</a></li>
+										</ul> -->
+									</div>
+									<a href="#" class="image featured"><img src="images/u-net.png" alt="" /></a>
+									<p>
+										Binarization, one of the most popular research directions in computer vision, is still facing challenges, especially for the degraded historical Tibetan document images. Quite a few U-Net-based binarization approaches might encounter a particular problem called pseudo-touching which hampers subsequent procedures including text line segmentation, character segmentation, and recognition. To avoid these undesired pseudo-touching strokes and obtain optimal binary images, the present work employs several easy-to-use techniques, such as rescaling the input and output of the attention U-Net. Furthermore, we provide insights into the accelerated construction of the training set and discuss the effects of various configurations. The quantitative experimental results on our dataset show that upsampling the input image by a factor of two during the inference phase can alleviate the pseudo-touching. It achieves an average P-FM of 97.73 which is two percentage points higher than the result of U-Net. The proposed approach can also accept common challenges including non-uniform illumination, stains, noise and delivers finer performance across several metrics.
+									</p>
+								</article>
+
+								<article class="box post post-excerpt">
+									<header>
+										<!--
+											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+											if they get too long. You can also remove the <p> entirely if you don't
+											need a subtitle.
+										-->
+										<h2><a href="#">Accurate fine-grained layout analysis for the historical Tibetan document based on the instance segmentation</a></h2> 
+										<p>P Zhao, W Wang, Z Cai, G Zhang, Y Lu</p>
+										<p>IEEE <i>Access</i></p>
+									</header>
+									<div class="info">
+										<!--
+											Note: The date should be formatted exactly as it's shown below. In particular, the
+											"least significant" characters of the month should be encapsulated in a <span>
+											element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+											Oh, and if you don't need a date for a particular page or post you can simply delete
+											the entire "date" element.
+											
+										-->
+										<span class="date"><span class="month">2021<span>y</span></span> <span class="day">Nov</span></span>
+										<!--
+											Note: You can change the number of list items in "stats" to whatever you want.
+										-->
+										<!-- <ul class="stats">
+											<li><a href="#" class="icon fa-comment">16</a></li>
+											<li><a href="#" class="icon fa-heart">32</a></li>
+											<li><a href="#" class="icon fa-twitter">64</a></li>
+											<li><a href="#" class="icon fa-facebook">128</a></li>
+										</ul> -->
+									</div>
+									<a href="#" class="image featured"><img src="images/41.png" alt="" /></a>
+									<p>
+										Accurate layout analysis without subsequent text-line segmentation remains an ongoing challenge, especially when facing the Kangyur, a kind of historical Tibetan document featuring considerable touching components and mottled background. Aiming at identifying different regions in document images, layout analysis is indispensable for subsequent procedures such as character recognition. However, there was only a little research being carried out to perform line-level layout analysis which failed to deal with the Kangyur. To obtain the optimal results, a fine-grained sub-line level layout analysis approach is presented. Firstly, we introduced an accelerated method to build the dataset which is dynamic and reliable. Secondly, enhancement had been made to the SOLOv2 according to the characteristics of the Kangyur. Then, we fed the enhanced SOLOv2 with the prepared annotation file during the training phase. Once the network is trained, instances of the text line, sentence, and titles can be segmented and identified during the inference stage. The experimental results show that the proposed method delivers a decent 72.7% average precision on our dataset. In general, this preliminary research provides insights into the fine-grained sub-line level layout analysis and testifies the SOLOv2-based approaches. We also believe that the proposed methods can be adopted on other language documents with various layouts.
+									</p>
+								</article>
+						
+							<!-- Post -->
+								<!-- <article class="box post post-excerpt">
+									<header>
+										<h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+										<p>Feugiat interdum sed commodo ipsum consequat dolor nullam metus</p>
+									</header>
+									<div class="info">
+										<span class="date"><span class="month">Jul<span>y</span></span> <span class="day">8</span><span class="year">, 2014</span></span>
+										<ul class="stats">
+											<li><a href="#" class="icon fa-comment">16</a></li>
+											<li><a href="#" class="icon fa-heart">32</a></li>
+											<li><a href="#" class="icon fa-twitter">64</a></li>
+											<li><a href="#" class="icon fa-facebook">128</a></li>
+										</ul>
+									</div>
+									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<p>
+										Quisque vel sapien sit amet tellus elementum ultricies. Nunc vel orci turpis. Donec id malesuada metus. 
+										Nunc nulla velit, fermentum quis interdum quis, tate etiam commodo lorem ipsum dolor sit amet dolore. 
+										Quisque vel sapien sit amet tellus elementum ultricies. Nunc vel orci turpis. Donec id malesuada metus. 
+										Nunc nulla velit, fermentum quis interdum quis, convallis eu sapien. Integer sed ipsum ante.
+									</p>
+								</article> -->
+
+							<!-- Pagination -->
+								<!-- <div class="pagination">
+									<a href="#" class="button previous">Previous Page</a>
+									<div class="pages">
+										<a href="#" class="active">1</a>
+										<a href="#">2</a>
+										<a href="#">3</a>
+										<a href="#">4</a>
+										<span>&hellip;</span>
+										<a href="#">20</a>
+									</div>
+									<a href="#" class="button next">Next Page</a>
+								</div> -->
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+					
+						<!-- Logo -->
+							<h1 id="logo"><a href="#">OCEAN</a></h1>
+					
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">About Me</a></li>
+								<li class="current"><a href="publications.html">Publications</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="awards.html">Awards</a></li>
+							</ul>
+						</nav>
+
+						<!-- Search -->
+							<!-- <section class="box search">
+								<form method="post" action="#">
+									<input type="text" class="text" name="search" placeholder="Search" />
+								</form>
+							</section> -->
+					
+						<!-- Text -->
+							<section class="box text-style1">
+								<div class="inner">
+									<p>
+										Feel free to contact me: <a href="mailto:oceanytech@gmail.com">oceanytech@gmail.com</a>
+										
+									</p>
+								</div>
+							</section>
+					
+						<!-- Recent Posts -->
+							<!-- <section class="box recent-posts">
+								<header>
+									<h2>Recent Posts</h2>
+								</header>
+								<ul>
+									<li><a href="#">Lorem ipsum dolor</a></li>
+									<li><a href="#">Feugiat nisl aliquam</a></li>
+									<li><a href="#">Sed dolore magna</a></li>
+									<li><a href="#">Malesuada commodo</a></li>
+									<li><a href="#">Ipsum metus nullam</a></li>
+								</ul>
+							</section> -->
+					
+						<!-- Recent Comments -->
+							<!-- <section class="box recent-comments">
+								<header>
+									<h2>Recent Comments</h2>
+								</header>
+								<ul>
+									<li>case on <a href="#">Lorem ipsum dolor</a></li>
+									<li>molly on <a href="#">Sed dolore magna</a></li>
+									<li>case on <a href="#">Sed dolore magna</a></li>
+								</ul>
+							</section> -->
+					
+						<!-- Calendar -->
+							<!-- <section class="box calendar">
+								<div class="inner">
+									<table>
+										<caption>July 2014</caption>
+										<thead>
+											<tr>
+												<th scope="col" title="Monday">M</th>
+												<th scope="col" title="Tuesday">T</th>
+												<th scope="col" title="Wednesday">W</th>
+												<th scope="col" title="Thursday">T</th>
+												<th scope="col" title="Friday">F</th>
+												<th scope="col" title="Saturday">S</th>
+												<th scope="col" title="Sunday">S</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="4" class="pad"><span>&nbsp;</span></td>
+												<td><span>1</span></td>
+												<td><span>2</span></td>
+												<td><span>3</span></td>
+											</tr>
+											<tr>
+												<td><span>4</span></td>
+												<td><span>5</span></td>
+												<td><a href="#">6</a></td>
+												<td><span>7</span></td>
+												<td><span>8</span></td>
+												<td><span>9</span></td>
+												<td><a href="#">10</a></td>
+											</tr>
+											<tr>
+												<td><span>11</span></td>
+												<td><span>12</span></td>
+												<td><span>13</span></td>
+												<td class="today"><a href="#">14</a></td>
+												<td><span>15</span></td>
+												<td><span>16</span></td>
+												<td><span>17</span></td>
+											</tr>
+											<tr>
+												<td><span>18</span></td>
+												<td><span>19</span></td>
+												<td><span>20</span></td>
+												<td><span>21</span></td>
+												<td><span>22</span></td>
+												<td><a href="#">23</a></td>
+												<td><span>24</span></td>
+											</tr>
+											<tr>
+												<td><a href="#">25</a></td>
+												<td><span>26</span></td>
+												<td><span>27</span></td>
+												<td><span>28</span></td>
+												<td class="pad" colspan="3"><span>&nbsp;</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section> -->
+						
+						<!-- Copyright -->
+							<ul id="copyright">
+								<li>Personal Website</li>
+							</ul>
+
+					</div>
+
+			</div>
+
+	</body>
+</html>
