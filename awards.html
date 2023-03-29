@@ -24,6 +24,23 @@
 			<link rel="stylesheet" href="css/style-wide.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+			.star li {
+				list-style: none;
+				position: relative;
+				padding-left: 20px;
+				line-height: 1.5;
+			}
+		
+			.star li:before {
+				content: "\2605";
+				position: absolute;
+				left: 0;
+				color: gold;
+				font-size: 16px;
+				line-height: 1;
+			}
+		</style>
 	</head>
 	<!--
 		Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
@@ -68,7 +85,7 @@
 											<li><a href="#" class="icon fa-facebook">128</a></li>
 										</ul> -->
 									</div>
-									<ol id="my_list">
+									<ol id="my_list" class="star">
 										<li>2020, 全国大学生英语竞赛(NECCS), 国家级一等奖</li>
 										<li>2021, 首届中国图像图形学报研究生学术论坛报告, 国家学会级优秀奖</li>
 										<li>2021, 第二届全国高校计算机能力挑战赛, 省级二等奖</li>
