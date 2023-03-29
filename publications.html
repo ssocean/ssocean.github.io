@@ -42,6 +42,68 @@
 								<article class="box post post-excerpt">
 									<header>
 										<!--
+																			Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+																			if they get too long. You can also remove the <p> entirely if you don't
+																			need a subtitle.
+																		-->
+										<h2><a href="#">Uchen Document Layout Analysis and Recognition System</a></h2>
+										<p>Penghai Zhao</p>
+										<p>乌金体藏文文档版面分析与识别系统（优秀硕士毕业论文）</p>
+									</header>
+									<div class="info">
+										<!--
+																			Note: The date should be formatted exactly as it's shown below. In particular, the
+																			"least significant" characters of the month should be encapsulated in a <span>
+																			element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+																			Oh, and if you don't need a date for a particular page or post you can simply delete
+																			the entire "date" element.
+																			
+																		-->
+										<span class="date"><span class="month">2022<span>y</span></span> <span class="day">May</span></span>
+										<!--
+																			Note: You can change the number of list items in "stats" to whatever you want.
+																		-->
+										<!-- <ul class="stats">
+																			<li><a href="#" class="icon fa-comment">16</a></li>
+																			<li><a href="#" class="icon fa-heart">32</a></li>
+																			<li><a href="#" class="icon fa-twitter">64</a></li>
+																			<li><a href="#" class="icon fa-facebook">128</a></li>
+																		</ul> -->
+									</div>
+									<a href="#" class="image featured"><img src="images/uchen_system.png" alt="" /></a>
+									<p>
+										As a common font of Tibetan, Uchen is widely used in various kinds of Tibetan document at different times. In recent
+										years, ongoing digitalization imposes increasing demands on automated optical character recognition which makes Uchen
+										document layout analysis and recognition system much more meaningful and useful. Extensive research has shown that
+										traditional methods have the capacity to extract text from contemporary documents. However, accurate binarization,
+										layout analysis, and recognition still remain real challenges, especially when facing the Kangyur, a kind of historical
+										Tibetan document featuring non-uniform illumination, mottled background and considerable touching components. In this
+										thesis, traditional and deep learning-based studies have been conducted on both contemporary and historical Tibetan
+										documents. Major contributions are as follows:
+										(1) Printed Tibetan document analysis and recognition. Traditional binarization methods were adopted to generate the
+										binarization results for the printed Tibetan document images. Based on the resulted binary images, the present work
+										employed techniques including the Hough transform and connected components analysis to extract layout information from
+										the document images. In addition, CNN was adopted to classify the printed Tibetan character. The proposed CNN achieves
+										the recognition accuracy of 99.77% while being low-complexity.
+										(2) Historical Tibetan document analysis and recognition. This thesis proposes upsampling the input with corresponding
+										downsampling of the output as an easy-to-use solution for U-Net based approaches which is effective on our dataset and
+										the DIBCO 2017 dataset. The quantitative experimental results shows that the proposed method can alleviate the
+										pseudo-touching and achieves an average P-FM of 97.73 which is two percentage points higher than the result of U-Net. To
+										obtain superior prediction at text image boundaries, a sub-line level layout analysis approach based on the SOLOv2 is
+										presented. The experimental results show that the proposed method delivers a decent 72.7% AP on our dataset that
+										suggests anchor-free networks’ advantage in layout analysis. This thesis also proposes an end-to-end recognition network
+										christened TSViT and develops the overlapping recognition strategy. TSViT achieves 84.47% accuracy on the test set.
+										(3) The Design and Realization of the Uchen Document Layout Analysis and Recognition System. Following the modular
+										design philosophy of ‘high coheres, low coupling’, this thesis uses PyQT5, OpenCV, and Pytorch to complete the
+										development of the stable and flexible system. The binarization, layout analysis, and recognition functions can perform
+										well during the software tests which satisfy the practical requirements.
+										See more at <a href="https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C475KOm_zrgu4lQARvep2SAke-wuWrktdE-tSIT2YIbQ2DyIttZrwdyOjo5Mq2NXe6fFtYSrVhzbXS2Hk0dXu74t&src=copy">[1]赵鹏海. 乌金体藏文文档版面分析与识别系统[D].西北民族大学,2022.DOI:10.27408/d.cnki.gxmzc.2022.000367.</a>
+									</p>
+								</article>
+
+								<article class="box post post-excerpt">
+									<header>
+										<!--
 											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
 											if they get too long. You can also remove the <p> entirely if you don't
 											need a subtitle.
@@ -150,7 +212,7 @@
 								</div>
 							</section>
 					
-							</section> -->
+							</section>
 							<section class="box">
 								<h2>Visitor Location:</h2>
 								<div class="inner">
