@@ -24,6 +24,12 @@
 			<link rel="stylesheet" href="css/style-wide.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+			.align-justify {
+				text-align: justify;
+				text-justify: inter-word;
+			}
+		</style>
 	</head>
 	<!--
 		Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
@@ -71,7 +77,7 @@
 																		</ul> -->
 									</div>
 									<a href="#" class="image featured"><img src="images/system.gif" alt="" /></a>
-									<p>
+									<p class="align-justify">
 										As a common font of Tibetan, Uchen is widely used in various kinds of Tibetan document at different times. In recent
 										years, ongoing digitalization imposes increasing demands on automated optical character recognition which makes Uchen
 										document layout analysis and recognition system much more meaningful and useful. Extensive research has shown that
@@ -133,7 +139,7 @@
 										</ul> -->
 									</div>
 									<a href="#" class="image featured"><img src="images/u-net.png" alt="" /></a>
-									<p>
+									<p class="align-justify">
 										Binarization, one of the most popular research directions in computer vision, is still facing challenges, especially for the degraded historical Tibetan document images. Quite a few U-Net-based binarization approaches might encounter a particular problem called pseudo-touching which hampers subsequent procedures including text line segmentation, character segmentation, and recognition. To avoid these undesired pseudo-touching strokes and obtain optimal binary images, the present work employs several easy-to-use techniques, such as rescaling the input and output of the attention U-Net. Furthermore, we provide insights into the accelerated construction of the training set and discuss the effects of various configurations. The quantitative experimental results on our dataset show that upsampling the input image by a factor of two during the inference phase can alleviate the pseudo-touching. It achieves an average P-FM of 97.73 which is two percentage points higher than the result of U-Net. The proposed approach can also accept common challenges including non-uniform illumination, stains, noise and delivers finer performance across several metrics.
 									</p>
 								</article>
@@ -170,7 +176,7 @@
 										</ul> -->
 									</div>
 									<a href="#" class="image featured"><img src="images/41.png" alt="" /></a>
-									<p>
+									<p class="align-justify">
 										Accurate layout analysis without subsequent text-line segmentation remains an ongoing challenge, especially when facing the Kangyur, a kind of historical Tibetan document featuring considerable touching components and mottled background. Aiming at identifying different regions in document images, layout analysis is indispensable for subsequent procedures such as character recognition. However, there was only a little research being carried out to perform line-level layout analysis which failed to deal with the Kangyur. To obtain the optimal results, a fine-grained sub-line level layout analysis approach is presented. Firstly, we introduced an accelerated method to build the dataset which is dynamic and reliable. Secondly, enhancement had been made to the SOLOv2 according to the characteristics of the Kangyur. Then, we fed the enhanced SOLOv2 with the prepared annotation file during the training phase. Once the network is trained, instances of the text line, sentence, and titles can be segmented and identified during the inference stage. The experimental results show that the proposed method delivers a decent 72.7% average precision on our dataset. In general, this preliminary research provides insights into the fine-grained sub-line level layout analysis and testifies the SOLOv2-based approaches. We also believe that the proposed methods can be adopted on other language documents with various layouts.
 									</p>
 								</article>
