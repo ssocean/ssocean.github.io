@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "type": {
+        "cn": "\u7814\u7a76\u9879\u76ee",
+        "eng": "Research"
+      },
+      "time": {
+        "cn": "2018.1 - 2021.12",
+        "eng": "2018.1 - 2021.12"
+      },
+      "title": {
+        "cn": "\u4e4c\u91d1\u4f53\u85cf\u6587\u53e4\u7c4d\u6587\u6863\u5206\u6790\u4e0e\u8bc6\u522b\u7814\u7a76",
+        "eng": "Analysis and Recognition of Uchen Tibetan Historical Documents"
+      },
+      "description": {
+        "cn": "\u56fd\u5bb6\u81ea\u7136\u79d1\u5b66\u57fa\u91d1\u9879\u76ee\uff0c\u805a\u7126\u4e8e\u4e4c\u91d1\u4f53\u85cf\u6587\u53e4\u7c4d\u6587\u6863\u7684\u7248\u9762\u5206\u6790\u3001\u56fe\u50cf\u7406\u89e3\u4e0e\u6587\u672c\u8bc6\u522b\u95ee\u9898\u3002",
+        "eng": "A National Natural Science Foundation project focused on layout analysis, image understanding, and text recognition for Uchen Tibetan historical documents."
+      },
+      "chips": {
+        "cn": [
+          "No.61772430",
+          "\u4e3b\u6301\u4eba\uff1a\u738b\u7ef4\u5170"
+        ],
+        "eng": [
+          "No.61772430",
+          "Lead: Wang Weilan"
+        ]
+      },
+      "image": "images/uchen_system.png",
+      "repoUrl": "https://github.com"
+    },
+    {
+      "type": {
+        "cn": "\u7cfb\u7edf\u5de5\u7a0b",
+        "eng": "System"
+      },
+      "time": {
+        "cn": "2021.3 - 2022.3",
+        "eng": "2021.3 - 2022.3"
+      },
+      "title": {
+        "cn": "\u85cf\u6587\u53e4\u7c4d\u6587\u6863\u56fe\u50cf\u8bc6\u522b\u7cfb\u7edf\u96c6\u6210\u5f00\u53d1",
+        "eng": "Integrated Development of a Tibetan Historical Document Recognition System"
+      },
+      "description": {
+        "cn": "\u897f\u5317\u6c11\u65cf\u5927\u5b66\u7814\u7a76\u751f\u521b\u65b0\u56e2\u961f\u9879\u76ee\uff0c\u5c06\u85cf\u6587\u53e4\u7c4d\u6587\u6863\u8bc6\u522b\u80fd\u529b\u4e0e\u5b9e\u9645\u7cfb\u7edf\u5de5\u7a0b\u96c6\u6210\u7ed3\u5408\u5728\u4e00\u8d77\u3002",
+        "eng": "A graduate innovation team project that integrates Tibetan historical document recognition capability into a practical engineering system."
+      },
+      "chips": {
+        "cn": [
+          "Yxm2021002",
+          "\u4e3b\u6301\u4eba\uff1a\u8d75\u9e4f\u6d77"
+        ],
+        "eng": [
+          "Yxm2021002",
+          "Lead: Penghai Zhao"
+        ]
+      },
+      "image": "images/system.gif",
+      "repoUrl": "https://github.com"
+    },
+    {
+      "type": {
+        "cn": "\u5f00\u6e90\u9879\u76ee",
+        "eng": "Open Source"
+      },
+      "time": {
+        "cn": "2024.6 - \u81f3\u4eca",
+        "eng": "2024.6 - Present"
+      },
+      "title": {
+        "cn": "\u51cf\u8bba",
+        "eng": "Jianlun"
+      },
+      "description": {
+        "cn": "\u4e00\u4e2a\u6b63\u5728\u6301\u7eed\u6269\u5c55\u7684\u9879\u76ee\u7a7a\u95f4\uff0c\u53ef\u4ee5\u7528\u6765\u653e\u4ea7\u54c1\u3001\u5de5\u5177\u94fe\u6216\u5f00\u6e90 Repo\uff0c\u800c\u4e0d\u53ea\u662f\u4f20\u7edf\u610f\u4e49\u4e0a\u7684\u7814\u7a76\u9879\u76ee\u3002",
+        "eng": "An evolving project space that can represent a product, a toolchain, or an open repository rather than only a conventional academic project entry."
+      },
+      "chips": {
+        "cn": [
+          "\u8d1f\u8d23\u4eba\uff1a\u8d75\u9e4f\u6d77",
+          "Repo-ready"
+        ],
+        "eng": [
+          "Owner: Penghai Zhao",
+          "Repo-ready"
+        ]
+      },
+      "image": "images/system.gif",
+      "repoUrl": "https://github.com"
+    }
+  ]
+}

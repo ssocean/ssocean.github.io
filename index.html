@@ -18,127 +18,155 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<!-- Swiper CSS -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/homepage-redesign.css" />
+		<style>
+			.story-grid {
+				grid-template-columns: minmax(0, 1fr) !important;
+			}
 
-		<!-- Swiper JS -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+			.story-card {
+				width: 100%;
+			}
 
+			.hero-visual {
+				align-items: center;
+				justify-content: center;
+				perspective: 1400px;
+			}
+
+			.portrait-frame {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transform-style: preserve-3d;
+				will-change: transform;
+				transition: transform 220ms ease;
+			}
+
+			.portrait-frame img {
+				object-position: center center;
+			}
+
+			@media screen and (max-width: 1200px) {
+				.story-grid {
+					grid-template-columns: 1fr !important;
+				}
+			}
+		</style>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/homepage-redesign.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<!--
-		Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
-		Set it to "right-sidebar" to, you guessed it, position it on the right.
-	-->
-	<body class="left-sidebar homepage">
+	<body class="left-sidebar homepage-redesign">
+		<div id="wrapper">
+			<div id="content">
+				<div class="inner">
+					<main class="home-shell">
+						<section class="hero-panel reveal-on-load">
+							<div class="hero-copy">
+								<p class="hero-kicker">Researcher &middot; Engineer &middot; Builder</p>
+								<h1>I'm Penghai Zhao <span>| 我是赵鹏海</span></h1>
+								<p class="hero-subtitle">Major Interests: CV, NLP, Software Engineering, AI for Researchers</p>
+								<div class="interest-ribbon">
+									<span>Computer Vision</span>
+									<span>Natural Language Processing</span>
+									<span>Software Engineering</span>
+									<span>AI for Researchers</span>
+								</div>
+							</div>
+							<div class="hero-visual reveal-on-load delay-1">
+								<div class="portrait-frame">
+									<img src="images/pic01.jpg" alt="In New-Zealand with his wife." />
+								</div>
+								<div class="floating-note">
+									<p class="label">Current Focus</p>
+									<p>Human-centered AI research and practical engineering.</p>
+								</div>
+							</div>
+						</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Content -->
-					<div id="content">
-						<div class="inner">
-					
-							<!-- Post -->
-								<article class="box post post-excerpt hero-card">
-									<header>
-										<!--
-											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
-											if they get too long. You can also remove the <p> entirely if you don't
-											need a subtitle.
-										-->
-										<h2><a href="#">I'm Penghai Zhao | 我是赵鹏海</a></h2> 
-										<p>Major Interests: CV, NLP, Software Engineering, AI for Researchers</p>
-									</header>
-
-									<div class="info">
-										<!-- <span class="date"><span class="month">1997<span>y</span></span> <span class="day">Sep</span></span> -->
-										<a href="#" class="icon fa-user" style="font-size: 50px; display: block; margin: 0 auto; text-align: center;"></a>
-
-										<!--<i class="fa-solid fa-graduation-cap"></i><i class="fas fa-user-graduate"></i>
-											Note: The date should be formatted exactly as it's shown below. In particular, the
-											"least significant" characters of the month should be encapsulated in a <span>
-											element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-											Oh, and if you don't need a date for a particular page or post you can simply delete
-											the entire "date" element.
-											
-										-->
-										<!-- <span class="date"></span> -->
-										<!--
-											Note: You can change the number of list items in "stats" to whatever you want.
-										-->
-										<!-- <ul class="stats">
-											<li><a href="#" class="icon fa-comment">16</a></li>
-											<li><a href="#" class="icon fa-heart">32</a></li>
-											<li><a href="#" class="icon fa-twitter">64</a></li>
-											<li><a href="#" class="icon fa-facebook">128</a></li>
-										</ul> -->
-									</div>
-									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="In New-Zealand with his wife." width="50%"  /></a>
-									<!-- <figure>
-										<img src="images/pic01.jpg" alt="This is a photo featuring me (on the left) and my supervisor Li Xiang (on the right).">
-										<figcaption>This is a photo featuring me (on the left) and my supervisor Li Xiang (on the right).</figcaption>
-									</figure> -->
-									<p>
-										Zhaopenghai was born in Zhengzhou, China. He obtained his Bachelor's and Master's degrees in 2019 and 2022, respectively. Now, he is an Eng.D. candidate at VCIP, the Department of Computer Science, <a href="https://www.nankai.edu.cn/">Nankai University</a>, China. His areas of expertise encompass computer vision, natural language processing, software engineering, alongside a particular focus on AI for researchers.
-									</p>
-								</article>
-						
-
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-					
-						<!-- Logo -->
-							<h1 id="logo"><a href="#">OCEAN</a></h1>
-					
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="index.html">About Me</a></li>
-									<li><a href="publications.html">Publications</a></li>
-									<li><a href="projects.html">Projects</a></li>
-									<li><a href="awards.html">Awards</a></li>
-								</ul>
-							</nav>
-
-					
-						<!-- Text -->
-						<section class="box text-style1">
-							<div class="inner">
+						<section class="story-grid">
+							<article class="story-card reveal-on-load delay-2">
+								<p class="section-label">About</p>
 								<p>
-									Feel free to contact me: <a href="mailto:oceanytech@gmail.com">oceanytech@gmail.com</a>
-									
+									Zhaopenghai was born in Zhengzhou, China. He obtained his Bachelor's and Master's degrees in 2019 and 2022, respectively. Now, he is an Eng.D. candidate at VCIP, the Department of Computer Science, <a href="https://www.nankai.edu.cn/">Nankai University</a>, China. His areas of expertise encompass computer vision, natural language processing, software engineering, alongside a particular focus on AI for researchers.
 								</p>
-							</div>
+							</article>
 						</section>
-
-
-						<section class="box">
-							<h2>Visitor Location:</h2>
-							<div class="inner">
-								<a href="https://clustrmaps.com/site/1bpnd"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=_UKrF0agNP06IRETu_e68t2tf8MVKjRd5gAUO7sHk_Y&cl=ffffff" /></a>
-							</div>
-						</section>
-
-					<!-- Copyright -->
-						<ul id="copyright">
-							<li>Personal Website</li>
-							<li></li>
-						</ul>
-
+					</main>
 				</div>
+			</div>
 
+			<div id="sidebar">
+				<div class="sidebar-inner">
+					<h1 id="logo"><a href="#">OCEAN</a></h1>
+
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">About Me</a></li>
+							<li><a href="publications.html">Publications</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="awards.html">Awards</a></li>
+						</ul>
+					</nav>
+
+					<section class="box text-style1 contact-panel">
+						<div class="inner">
+							<p class="section-label">Contact</p>
+							<p>
+								Feel free to contact me: <a href="mailto:oceanytech@gmail.com">oceanytech@gmail.com</a>
+							</p>
+						</div>
+					</section>
+
+					<section class="box visitor-panel">
+						<h2>Visitor Location:</h2>
+						<div class="inner">
+							<a href="https://clustrmaps.com/site/1bpnd" title="Visit tracker"><img class="clustrmaps-image" data-src="https://www.clustrmaps.com/map_v2.png?d=_UKrF0agNP06IRETu_e68t2tf8MVKjRd5gAUO7sHk_Y&cl=ffffff" loading="lazy" decoding="async" fetchpriority="low" referrerpolicy="no-referrer" alt="Visitor location tracker map" /></a>
+						</div>
+					</section>
+
+					<ul id="copyright">
+						<li>Personal Website</li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		
+
+		<script src="js/homepage.js"></script>
+		<script src="js/sidebar-widgets.js"></script>
+		<script>
+			(function () {
+				var heroVisual = document.querySelector('.hero-visual');
+				var portraitFrame = document.querySelector('.portrait-frame');
+				if (!heroVisual || !portraitFrame) return;
+
+				function resetTilt() {
+					portraitFrame.style.transform = 'rotateX(0deg) rotateY(0deg) translate3d(0, 0, 0)';
+				}
+
+				heroVisual.addEventListener('mousemove', function (event) {
+					var rect = heroVisual.getBoundingClientRect();
+					var x = (event.clientX - rect.left) / rect.width;
+					var y = (event.clientY - rect.top) / rect.height;
+					var rotateY = (x - 0.5) * 10;
+					var rotateX = (0.5 - y) * 10;
+					portraitFrame.style.transform =
+						'rotateX(' + rotateX.toFixed(2) + 'deg) rotateY(' + rotateY.toFixed(2) + 'deg) translate3d(0, -6px, 0)';
+				});
+
+				heroVisual.addEventListener('mouseleave', resetTilt);
+				resetTilt();
+			})();
+		</script>
 	</body>
 </html>

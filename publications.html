@@ -1,262 +1,113 @@
 <!DOCTYPE HTML>
-<!--
-	Striped by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Penghai Zhao</title>
 		<link rel="icon" href="images\bitbug_favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="images\bitbug_favicon.ico" type="image/x-icon">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/homepage-redesign.css" />
 		<style>
-			.align-justify {
-				text-align: justify;
-				text-justify: inter-word;
-			}
+			.publications-page .home-shell { gap: 20px; }
+			.publications-page .publications-hero { position: relative; overflow: hidden; padding: 40px 42px; background: linear-gradient(180deg, rgba(255,252,247,0.94) 0%, rgba(255,252,247,0.72) 100%); border: 1px solid rgba(255,255,255,0.72); border-radius: 36px; box-shadow: 0 32px 80px rgba(17,24,39,0.14); backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px); }
+			.publications-page .publications-hero:before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.62), rgba(255,255,255,0.1)); pointer-events: none; }
+			.publications-page .publications-hero > * { position: relative; z-index: 1; }
+			.hero-topbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+			.locale-switch { display: inline-flex; gap: 8px; padding: 6px; border-radius: 999px; background: rgba(21,21,21,0.05); border: 1px solid rgba(21,21,21,0.06); }
+			.locale-switch button { border: 0; background: transparent; color: #5d5954; font: inherit; font-size: 0.84rem; font-weight: 800; padding: 9px 14px; border-radius: 999px; cursor: pointer; }
+			.locale-switch button.is-active { background: #151515; color: #ffffff; }
+			.publications-page .hero-heading { margin: 16px 0 10px 0; font-size: clamp(2.8rem, 6vw, 5rem); line-height: 0.95; letter-spacing: -0.06em; font-weight: 800; }
+			.publications-page .hero-heading span { display: block; font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-style: italic; letter-spacing: -0.03em; }
+			.publications-page .hero-description { margin: 0; max-width: 760px; font-size: 1.08rem; line-height: 1.9; color: #6e6a65; }
+			.publications-list { display: grid; gap: 18px; }
+			.publication-card { position: relative; overflow: hidden; background: linear-gradient(180deg, rgba(255,252,247,0.92) 0%, rgba(255,252,247,0.74) 100%); border: 1px solid rgba(255,255,255,0.72); border-radius: 30px; box-shadow: 0 20px 56px rgba(17,24,39,0.1); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+			.publication-card:before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.58), rgba(255,255,255,0.12)); pointer-events: none; }
+			.publication-card > * { position: relative; z-index: 1; }
+			.publication-card:hover { transform: translateY(-2px); box-shadow: 0 28px 64px rgba(17,24,39,0.12); border-color: rgba(49,87,213,0.18); }
+			.publication-toggle { width: 100%; padding: 28px 32px; border: 0; background: transparent; text-align: left; cursor: pointer; display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 22px; }
+			.publication-main { min-width: 0; }
+			.publication-title { margin: 0 0 18px 0; font-size: 1.42rem; line-height: 1.35; letter-spacing: -0.03em; font-weight: 700; color: #151515; }
+			.publication-meta { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
+			.meta-block { min-width: 0; }
+			.meta-label { display: block; margin-bottom: 6px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(21,21,21,0.45); }
+			.meta-value { display: block; font-size: 0.97rem; line-height: 1.7; color: #4e4a46; }
+			.publication-year { align-self: start; display: inline-flex; align-items: center; justify-content: center; min-width: 92px; padding: 12px 16px; border-radius: 999px; background: rgba(49,87,213,0.1); color: #3157d5; font-size: 0.94rem; font-weight: 800; letter-spacing: 0.04em; }
+			.publication-panel { display: none; }
+			.publication-panel-inner { overflow: hidden; }
+			.publication-content { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(280px,0.72fr); gap: 26px; padding: 0 32px 32px 32px; }
+			.publication-body { padding-top: 8px; border-top: 1px solid rgba(21,21,21,0.08); }
+			.publication-body p { margin: 18px 0 0 0; font-size: 1rem; line-height: 1.95; color: #4e4a46; text-align: justify; }
+			.publication-links { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px; }
+			.publication-link { display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 999px; background: rgba(49,87,213,0.08); border: 1px solid rgba(49,87,213,0.12); font-size: 0.94rem; font-weight: 700; color: #3157d5; }
+			.publication-figure { padding-top: 8px; }
+			.publication-figure img { display: block; width: 100%; border-radius: 24px; box-shadow: 0 20px 48px rgba(17,24,39,0.12); }
+			.publication-card.is-open .publication-title { color: #3157d5; }
+			.publication-card.is-open .publication-year { background: rgba(49,87,213,0.14); }
+			.publication-card.is-open .publication-chevron { transform: rotate(45deg); }
+			.publication-chevron { position: relative; width: 18px; height: 18px; margin-left: 10px; transition: transform 320ms cubic-bezier(.22, 1, .36, 1); }
+			.publication-chevron:before, .publication-chevron:after { content: ""; position: absolute; left: 50%; top: 50%; width: 16px; height: 2px; background: #3157d5; border-radius: 999px; transform: translate(-50%, -50%); }
+			.publication-chevron:after { transform: translate(-50%, -50%) rotate(90deg); }
+			.publications-page .contact-panel .section-label, .publications-page .contact-panel p, .publications-page #sidebar a, .publications-page #copyright { color: inherit; }
+			@media screen and (max-width: 1200px) { .publication-content { grid-template-columns: 1fr; } }
+			@media screen and (max-width: 900px) { .publication-meta { grid-template-columns: 1fr; } }
+			@media screen and (max-width: 736px) { .publications-page .publications-hero { padding: 24px 22px; border-radius: 28px; } .hero-topbar { flex-direction: column; align-items: flex-start; } .publication-toggle { padding: 22px; grid-template-columns: 1fr; } .publication-year { min-width: 0; justify-self: start; } .publication-title { font-size: 1.16rem; } .publication-content { padding: 0 22px 22px 22px; } }
 		</style>
 	</head>
-	<!--
-		Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
-		Set it to "right-sidebar" to, you guessed it, position it on the right.
-		fa-file-text (\f15c): 这个图标通常代表文档、文章或文本文件，非常适合表示论文或其他文献类型的内容。
-
-fa-file-o (\f016): 这个图标代表一个空白文件，可以用来表示任何类型的文件或文档。
-
-fa-book (\f02d): 这个图标代表一本书，通常用于表示书籍、文献、教材等，也可以代表论文或研究材料。
-
-fa-newspaper-o (\f1ea): 这个图标代表报纸，适合表示新闻、文章、期刊或其他类似的媒体内容。
-
-fa-clipboard (\f0ea): 这个图标代表一个夹子或写字板，通常用于表示草稿、文档或笔记。
-
-fa-file-pdf-o (\f1c1): 这个图标专门用于表示 PDF 文件，可以用来代表论文、文档或研究材料等以 PDF 格式存在的内容。
-	-->
-	<body class="left-sidebar">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Content -->
-					<div id="content">
-						<div class="inner">
-					
-
-								<article class="box post post-excerpt">
-									<header>
-										<h2><a href="https://arxiv.org/abs/2408.03934">From Words to Worth: Newborn Article Impact Prediction with LLM</a></h2>
-										<p>Penghai Zhao, Qinghua Xing, Kairan Dou, Jinyu Tian, Ying Tai, Jian Yang, Ming-Ming Cheng, Xiang Li</p>
-										<p>arXiv pre-print</p>
-									</header>
-									<div class="info">
-										<span class="date"><span class="month">2024<span>y</span></span> <span class="day">Aug</span></span>
-									</div>
-									<a href="#" class="image featured"><img src="images/aip.png" alt="" /></a>
-									<p class="align-justify">
-										As the academic landscape expands, the challenge of efficiently identifying potentially high-impact articles among the vast number of newly published works becomes critical. This paper introduces a promising approach, leveraging the capabilities of fine-tuned LLMs to predict the future impact of newborn articles solely based on titles and abstracts. Moving beyond traditional methods heavily reliant on external information, the proposed method discerns the shared semantic features of highly impactful papers from a large collection of title-abstract and potential impact pairs. These semantic features are further utilized to regress an improved metric, TNCSI_SP, which has been endowed with value, field, and time normalization properties. Additionally, a comprehensive dataset has been constructed and released for fine-tuning the LLM, containing over 12,000 entries with corresponding titles, abstracts, and TNCSI_SP. The quantitative results, with an NDCG@20 of 0.901, demonstrate that the proposed approach achieves state-of-the-art performance in predicting the impact of newborn articles when compared to competitive counterparts. Finally, we demonstrate a real-world application for predicting the impact of newborn journal articles to demonstrate its noteworthy practical value. Overall, our findings challenge existing paradigms and propose a shift towards a more content-focused prediction of academic impact, offering new insights for assessing newborn article impact.
-									</p>
-								</article>
-
-								<article class="box post post-excerpt">
-									<header>
-										<h2><a href="https://arxiv.org/abs/2402.12928">A Literature Review of Literature Reviews in Pattern Analysis and Machine Intelligence</a></h2>
-										<p>Penghai Zhao, Xin Zhang, Ming-Ming Cheng, Jian Yang, Xiang Li</p>
-										<p>arXiv pre-print</p>
-									</header>
-									<div class="info">
-										<span class="date"><span class="month">2024<span>y</span></span> <span class="day">Feb</span></span>
-									</div>
-									<a href="#" class="image featured"><img src="images/ripami.png" alt="" /></a>
-									<p class="align-justify">
-           								Recent advancements in artificial intelligence and computational methods have propelled significant progress in the Pattern Analysis and Machine Intelligence (PAMI) field, spawning a proliferation of diverse knowledge. Within this rapidly expanding body of knowledge, literature reviews play a crucial role in synthesizing fragmented information, offering researchers a comprehensive understanding of the investigated topic and thus earning widespread recognition for their value. In this study, we examine and synthesize literature reviews within the PAMI field. Beginning with a narrative overview, we highlight common preferences adopted by authors when composing PAMI reviews. Following this, we provide a statistical analysis of these preferences and other data on the RiPAMI , a database containing over 3,000 reviews. Furthermore, we introduce a set of bibliometric indicators designed to assess several key aspects, such as the impact of literature reviews and the quality of their references. Statistical bibliometrics analysis of the RiPAMI reveals a positive correlation between the reference quality and academic impact. Meanwhile, an analysis of AI-generated review samples uncovers a critical limitation: their difficulty in evaluating the academic value of newly published articles undermines their ability to identify cutting-edge research compared to human-authored reviews. Finally, we discuss how the proposed bibliometrics indicators can assist researchers in managing the growing volume of literature reviews and offering valuable insights into current challenges and future directions for literature reviews in PAMI.
-									</p>
-								</article>
-
-							<!-- Post -->
-								<article class="box post post-excerpt">
-									<header>
-										<!--
-																			Note: Titles and subtitles will wrap automatically when necessary, so don't worry
-																			if they get too long. You can also remove the <p> entirely if you don't
-																			need a subtitle.
-																		-->
-										<h2><a href="https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C475KOm_zrgu4lQARvep2SAke-wuWrktdE-tSIT2YIbQ2DyIttZrwdyOjo5Mq2NXe6fFtYSrVhzbXS2Hk0dXu74t&src=copy">Uchen Document Layout Analysis and Recognition System</a></h2>
-										<p>Penghai Zhao</p>
-										<p>乌金体藏文文档版面分析与识别系统（优秀硕士毕业论文）</p>
-									</header>
-									<div class="info">
-										<!--
-																			Note: The date should be formatted exactly as it's shown below. In particular, the
-																			"least significant" characters of the month should be encapsulated in a <span>
-																			element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-																			Oh, and if you don't need a date for a particular page or post you can simply delete
-																			the entire "date" element.
-																			
-																		-->
-										<span class="date"><span class="month">2022<span>y</span></span> <span class="day">May</span></span>
-										<!--
-																			Note: You can change the number of list items in "stats" to whatever you want.
-																		-->
-										<!-- <ul class="stats">
-																			<li><a href="#" class="icon fa-comment">16</a></li>
-																			<li><a href="#" class="icon fa-heart">32</a></li>
-																			<li><a href="#" class="icon fa-twitter">64</a></li>
-																			<li><a href="#" class="icon fa-facebook">128</a></li>
-																		</ul> -->
-									</div>
-									<a href="#" class="image featured"><img src="images/system.gif" alt="" /></a>
-									<p class="align-justify">
-										As a common font of Tibetan, Uchen is widely used in various kinds of Tibetan document at different times. In recent
-										years, ongoing digitalization imposes increasing demands on automated optical character recognition which makes Uchen
-										document layout analysis and recognition system much more meaningful and useful. Extensive research has shown that
-										traditional methods have the capacity to extract text from contemporary documents. However, accurate binarization,
-										layout analysis, and recognition still remain real challenges, especially when facing the Kangyur, a kind of historical
-										Tibetan document featuring non-uniform illumination, mottled background and considerable touching components. In this
-										thesis, traditional and deep learning-based studies have been conducted on both contemporary and historical Tibetan
-										documents. Major contributions are as follows:
-										(1) Printed Tibetan document analysis and recognition. Traditional binarization methods were adopted to generate the
-										binarization results for the printed Tibetan document images. Based on the resulted binary images, the present work
-										employed techniques including the Hough transform and connected components analysis to extract layout information from
-										the document images. In addition, CNN was adopted to classify the printed Tibetan character. The proposed CNN achieves
-										the recognition accuracy of 99.77% while being low-complexity.
-										(2) Historical Tibetan document analysis and recognition. This thesis proposes upsampling the input with corresponding
-										downsampling of the output as an easy-to-use solution for U-Net based approaches which is effective on our dataset and
-										the DIBCO 2017 dataset. The quantitative experimental results shows that the proposed method can alleviate the
-										pseudo-touching and achieves an average P-FM of 97.73 which is two percentage points higher than the result of U-Net. To
-										obtain superior prediction at text image boundaries, a sub-line level layout analysis approach based on the SOLOv2 is
-										presented. The experimental results show that the proposed method delivers a decent 72.7% AP on our dataset that
-										suggests anchor-free networks’ advantage in layout analysis. This thesis also proposes an end-to-end recognition network
-										christened TSViT and develops the overlapping recognition strategy. TSViT achieves 84.47% accuracy on the test set.
-										(3) The Design and Realization of the Uchen Document Layout Analysis and Recognition System. Following the modular
-										design philosophy of ‘high coheres, low coupling’, this thesis uses PyQT5, OpenCV, and Pytorch to complete the
-										development of the stable and flexible system. The binarization, layout analysis, and recognition functions can perform
-										well during the software tests which satisfy the practical requirements.
-										See more at <a href="https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C475KOm_zrgu4lQARvep2SAke-wuWrktdE-tSIT2YIbQ2DyIttZrwdyOjo5Mq2NXe6fFtYSrVhzbXS2Hk0dXu74t&src=copy">《乌金体藏文文档版面分析与识别系统》</a>
-									</p>
-								</article>
-
-								<article class="box post post-excerpt">
-									<header>
-										<!--
-											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
-											if they get too long. You can also remove the <p> entirely if you don't
-											need a subtitle.
-										-->
-										<h2><a href="https://link.springer.com/article/10.1007/s00521-021-06512-7">Alleviating pseudo-touching in attention U-Net-based binarization approach for the historical Tibetan document images</a></h2> 
-										<p>P Zhao, W Wang, G Zhang, Y Lu</p>
-										<p>Neural Computing and Applications</p>
-									</header>
-									<div class="info">
-
-										<span class="date"><span class="month">2021<span>y</span></span> <span class="day">Oct</span></span>
-
-									</div>
-									<a href="#" class="image featured"><img src="images/u-net.png" alt="" /></a>
-									<p class="align-justify">
-										Binarization, one of the most popular research directions in computer vision, is still facing challenges, especially for the degraded historical Tibetan document images. Quite a few U-Net-based binarization approaches might encounter a particular problem called pseudo-touching which hampers subsequent procedures including text line segmentation, character segmentation, and recognition. To avoid these undesired pseudo-touching strokes and obtain optimal binary images, the present work employs several easy-to-use techniques, such as rescaling the input and output of the attention U-Net. Furthermore, we provide insights into the accelerated construction of the training set and discuss the effects of various configurations. The quantitative experimental results on our dataset show that upsampling the input image by a factor of two during the inference phase can alleviate the pseudo-touching. It achieves an average P-FM of 97.73 which is two percentage points higher than the result of U-Net. The proposed approach can also accept common challenges including non-uniform illumination, stains, noise and delivers finer performance across several metrics.
-									</p>
-								</article>
-
-								<article class="box post post-excerpt">
-									<header>
-										<!--
-											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
-											if they get too long. You can also remove the <p> entirely if you don't
-											need a subtitle.
-										-->
-										<h2><a href="https://ieeexplore.ieee.org/abstract/document/9615155/">Accurate fine-grained layout analysis for the historical Tibetan document based on the instance segmentation</a></h2> 
-										<p>P Zhao, W Wang, Z Cai, G Zhang, Y Lu</p>
-										<p>IEEE <i>Access</i></p>
-									</header>
-									<div class="info">
-										<!--
-											Note: The date should be formatted exactly as it's shown below. In particular, the
-											"least significant" characters of the month should be encapsulated in a <span>
-											element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-											Oh, and if you don't need a date for a particular page or post you can simply delete
-											the entire "date" element.
-											
-										-->
-										<span class="date"><span class="month">2021<span>y</span></span> <span class="day">Nov</span></span>
-										<!--
-											Note: You can change the number of list items in "stats" to whatever you want.
-										-->
-										<!-- <ul class="stats">
-											<li><a href="#" class="icon fa-comment">16</a></li>
-											<li><a href="#" class="icon fa-heart">32</a></li>
-											<li><a href="#" class="icon fa-twitter">64</a></li>
-											<li><a href="#" class="icon fa-facebook">128</a></li>
-										</ul> -->
-									</div>
-									<a href="#" class="image featured"><img src="images/41.png" alt="" /></a>
-									<p class="align-justify">
-										Accurate layout analysis without subsequent text-line segmentation remains an ongoing challenge, especially when facing the Kangyur, a kind of historical Tibetan document featuring considerable touching components and mottled background. Aiming at identifying different regions in document images, layout analysis is indispensable for subsequent procedures such as character recognition. However, there was only a little research being carried out to perform line-level layout analysis which failed to deal with the Kangyur. To obtain the optimal results, a fine-grained sub-line level layout analysis approach is presented. Firstly, we introduced an accelerated method to build the dataset which is dynamic and reliable. Secondly, enhancement had been made to the SOLOv2 according to the characteristics of the Kangyur. Then, we fed the enhanced SOLOv2 with the prepared annotation file during the training phase. Once the network is trained, instances of the text line, sentence, and titles can be segmented and identified during the inference stage. The experimental results show that the proposed method delivers a decent 72.7% average precision on our dataset. In general, this preliminary research provides insights into the fine-grained sub-line level layout analysis and testifies the SOLOv2-based approaches. We also believe that the proposed methods can be adopted on other language documents with various layouts.
-									</p>
-								</article>
-						
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-					
-						<!-- Logo -->
-							<h1 id="logo"><a href="#">OCEAN</a></h1>
-					
-						<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">About Me</a></li>
-								<li class="current"><a href="publications.html">Publications</a></li>
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="awards.html">Awards</a></li>
-							</ul>
-						</nav>
-
-
-					
-						<!-- Text -->
-							<section class="box text-style1">
-								<div class="inner">
-									<p>
-										Feel free to contact me: <a href="mailto:oceanytech@gmail.com">oceanytech@gmail.com</a>
-										
-									</p>
+	<body class="left-sidebar homepage-redesign publications-page" data-page="publications">
+		<div id="wrapper">
+			<div id="content">
+				<div class="inner">
+					<main class="home-shell">
+						<section class="publications-hero">
+							<div class="hero-topbar">
+								<p class="section-label" data-i18n="section">Publications</p>
+								<div class="locale-switch">
+									<button type="button" data-locale="cn" class="is-active">CN</button>
+									<button type="button" data-locale="eng">ENG</button>
 								</div>
-							</section>
-					
-							</section>
-							<section class="box">
-								<h2>Visitor Location:</h2>
-								<div class="inner">
-									<!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=_UKrF0agNP06IRETu_e68t2tf8MVKjRd5gAUO7sHk_Y"></script> -->
-									<a href="https://clustrmaps.com/site/1bpnd"  title="Visit tracker">
-									<img src="//www.clustrmaps.com/map_v2.png?d=_UKrF0agNP06IRETu_e68t2tf8MVKjRd5gAUO7sHk_Y&cl=ffffff" /></a>
-								</div>
-							</section>
-						<!-- Copyright -->
-							<ul id="copyright">
-								<li>Personal Website</li>
-							</ul>
-
-					</div>
-
+							</div>
+							<h1 class="hero-heading"><span data-i18n="title-main">Selected</span><span data-i18n="title-accent">Research Outputs</span></h1>
+							<p class="hero-description" data-i18n="description"></p>
+						</section>
+						<section class="publications-list" data-render-list></section>
+					</main>
+				</div>
 			</div>
-
+			<div id="sidebar">
+				<div class="sidebar-inner">
+					<h1 id="logo"><a href="#">OCEAN</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">About Me</a></li>
+							<li class="current"><a href="publications.html">Publications</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="awards.html">Awards</a></li>
+						</ul>
+					</nav>
+					<section class="box text-style1 contact-panel">
+						<div class="inner">
+							<p class="section-label">Contact</p>
+							<p>Feel free to contact me: <a href="mailto:oceanytech@gmail.com">oceanytech@gmail.com</a></p>
+						</div>
+					</section>
+					<section class="box visitor-panel">
+						<h2>Visitor Location:</h2>
+						<div class="inner">
+							<a href="https://clustrmaps.com/site/1bpnd" title="Visit tracker"><img class="clustrmaps-image" data-src="https://www.clustrmaps.com/map_v2.png?d=_UKrF0agNP06IRETu_e68t2tf8MVKjRd5gAUO7sHk_Y&cl=ffffff" loading="lazy" decoding="async" fetchpriority="low" referrerpolicy="no-referrer" alt="Visitor location tracker map" /></a>
+						</div>
+					</section>
+					<ul id="copyright"><li>Personal Website</li></ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/sidebar-widgets.js"></script>
+		<script src="js/bilingual-pages.js"></script>
 	</body>
 </html>
