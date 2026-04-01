@@ -12,8 +12,20 @@
 	{
 		min-width: 1000px;
 	}
+
+	body.homepage
+	{
+		min-width: 1000px;
+	}
 	
 	body,input,textarea,select
+	{
+		font-size: 11pt;
+	}
+
+	body.homepage input,
+	body.homepage textarea,
+	body.homepage select
 	{
 		font-size: 11pt;
 	}
@@ -100,12 +112,59 @@
 		padding: 2em 3em 6em 3em;
 	}
 
+	body.homepage #content
+	{
+		padding: 3.25em 3.5em 4em 3.5em;
+	}
+
 		body.left-sidebar #content
 		{
 			margin-left: 14em; /* = sidebar width */
+		}
+
+		body.homepage.left-sidebar #content
+		{
+			margin-left: 17em;
 		}
 		
 		body.right-sidebar #content
 		{
 			margin-right: 14em; /* = sidebar width */
 		}
+
+	body.homepage .box.post
+	{
+		padding: 3em;
+		margin-bottom: 0;
+	}
+
+	body.homepage .box.post h2
+	{
+		font-size: 3.5em;
+	}
+
+	body.homepage .box.post header
+	{
+		padding-top: 0;
+		margin-bottom: 2em;
+	}
+
+	body.homepage .box.post header > p
+	{
+		font-size: 1.2em;
+		line-height: 1.7em;
+		position: static;
+		margin-bottom: 0;
+	}
+
+	body.homepage .box.post .info
+	{
+		width: auto;
+		padding: 0;
+		position: relative;
+		top: auto;
+		margin-bottom: 1.5em;
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+	}

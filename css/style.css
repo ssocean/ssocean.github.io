@@ -930,3 +930,221 @@
 	{
 		background: #364050 url('images/bg01.png');
 	}
+
+/*********************************************************************************/
+/* Homepage Refresh                                                              */
+/*********************************************************************************/
+
+	body.homepage {
+		background:
+			radial-gradient(circle at top left, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0) 34%),
+			linear-gradient(180deg, #f7f8fa 0%, #eef1f5 52%, #e9edf3 100%);
+		background-attachment: fixed;
+		color: #1f2937;
+	}
+
+	body.homepage,
+	body.homepage input,
+	body.homepage textarea,
+	body.homepage select {
+		font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+	}
+
+	body.homepage a {
+		color: #0a66d9;
+	}
+
+	body.homepage h2,
+	body.homepage h3,
+	body.homepage h4,
+	body.homepage h5,
+	body.homepage h6,
+	body.homepage #logo {
+		font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+		font-weight: 600;
+		letter-spacing: -0.03em;
+		color: #111827;
+	}
+
+	body.homepage #content {
+		background: transparent;
+		background-image: none;
+		box-shadow: none;
+	}
+
+	body.homepage .box.post {
+		position: relative;
+		background: rgba(255,255,255,0.72);
+		border: 1px solid rgba(255,255,255,0.78);
+		border-radius: 32px;
+		box-shadow: 0 30px 80px rgba(15,23,42,0.12);
+		backdrop-filter: blur(22px);
+		-webkit-backdrop-filter: blur(22px);
+	}
+
+	body.homepage .box.post:before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		background: linear-gradient(135deg, rgba(255,255,255,0.5), rgba(255,255,255,0.12));
+		pointer-events: none;
+	}
+
+	body.homepage .box.post > * {
+		position: relative;
+		z-index: 1;
+	}
+
+	body.homepage .box.post header {
+		margin-bottom: 1.5em;
+	}
+
+	body.homepage .box.post h2 {
+		font-size: clamp(2.4rem, 4vw, 4.6rem);
+		line-height: 1.05;
+		letter-spacing: -0.05em;
+		max-width: 12ch;
+	}
+
+	body.homepage .box.post header > p {
+		font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #6b7280;
+		margin-top: 1.25rem;
+	}
+
+	body.homepage .box.post p {
+		font-size: 1.04rem;
+		line-height: 1.95;
+		color: #4b5563;
+	}
+
+	body.homepage .box.post .info {
+		background: rgba(248,250,252,0.85);
+		border: 1px solid rgba(209,213,219,0.65);
+		box-shadow: 0 18px 40px rgba(15,23,42,0.08);
+	}
+
+	body.homepage .box.post .info .icon {
+		width: 88px;
+		height: 88px;
+		border-radius: 28px;
+		background: linear-gradient(180deg, #ffffff 0%, #edf2f7 100%);
+		color: #111827;
+		line-height: 88px;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 10px 30px rgba(15,23,42,0.08);
+	}
+
+	body.homepage .box.post .image.featured {
+		overflow: hidden;
+		border-radius: 28px;
+		margin-bottom: 2.2em;
+		box-shadow: 0 24px 60px rgba(15,23,42,0.14);
+	}
+
+	body.homepage .box.post .image.featured img {
+		width: 100%;
+		height: auto;
+		transform: scale(1.01);
+	}
+
+	body.homepage #sidebar {
+		background: rgba(18,24,38,0.78);
+		background-image: none;
+		border-right: 1px solid rgba(255,255,255,0.08);
+		box-shadow: inset -1px 0 0 rgba(255,255,255,0.06);
+		backdrop-filter: blur(24px);
+		-webkit-backdrop-filter: blur(24px);
+		text-shadow: none;
+	}
+
+	body.homepage #logo a {
+		background: rgba(255,255,255,0.08);
+		background-image: none;
+		border: 1px solid rgba(255,255,255,0.08);
+		border-radius: 20px;
+		box-shadow: none;
+		color: #f9fafb;
+		letter-spacing: 0.22em;
+	}
+
+	body.homepage #nav li,
+	body.homepage #sidebar section,
+	body.homepage #sidebar nav,
+	body.homepage #copyright:before,
+	body.homepage #sidebar section:before,
+	body.homepage #sidebar nav:before {
+		border-color: rgba(255,255,255,0.08);
+		box-shadow: none;
+	}
+
+	body.homepage #nav li a {
+		padding: 0.8em 1em;
+		border-radius: 14px;
+		color: rgba(255,255,255,0.72);
+	}
+
+	body.homepage #nav li.current a {
+		background: rgba(255,255,255,0.12) !important;
+		box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+		color: #ffffff;
+	}
+
+	body.homepage #nav li:hover a {
+		background: rgba(255,255,255,0.07);
+		color: #ffffff;
+	}
+
+	body.homepage .box.text-style1 .inner,
+	body.homepage #sidebar .box .inner {
+		background: rgba(255,255,255,0.06);
+		border: 1px solid rgba(255,255,255,0.08);
+		border-radius: 20px;
+		box-shadow: none;
+	}
+
+	body.homepage #sidebar h2,
+	body.homepage #sidebar h3,
+	body.homepage #sidebar h4,
+	body.homepage #sidebar h5,
+	body.homepage #sidebar h6 {
+		color: #f9fafb;
+		letter-spacing: -0.02em;
+	}
+
+	body.homepage #sidebar a {
+		color: #dbeafe;
+	}
+
+	body.homepage #sidebar .box img {
+		width: 100%;
+		border-radius: 14px;
+	}
+
+	body.homepage #copyright {
+		color: rgba(255,255,255,0.5);
+	}
+
+	body.homepage #titleBar,
+	body.homepage #sidePanel {
+		background: rgba(18,24,38,0.88);
+		background-image: none;
+		backdrop-filter: blur(18px);
+		-webkit-backdrop-filter: blur(18px);
+	}
+
+	body.homepage #titleBar .title {
+		box-shadow: none;
+		font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+		font-weight: 600;
+		letter-spacing: 0.08em;
+		text-shadow: none;
+	}
+
+	body.homepage #titleBar .toggle:before {
+		background: rgba(255,255,255,0.1);
+		box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+		text-shadow: none;
+	}

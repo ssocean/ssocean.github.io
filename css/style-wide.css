@@ -12,8 +12,20 @@
 	{
 		min-width: 1200px;
 	}
+
+	body.homepage
+	{
+		min-width: 1200px;
+	}
 	
 	body,input,textarea,select
+	{
+		font-size: 12pt;
+	}
+
+	body.homepage input,
+	body.homepage textarea,
+	body.homepage select
 	{
 		font-size: 12pt;
 	}
@@ -135,10 +147,53 @@
 		padding: 3em 5em 8em 5em;
 	}
 
+	body.homepage #content
+	{
+		padding: 4.5em 6.5em 5em 6.5em;
+	}
+
 		body.left-sidebar #content
 		{
 			margin-left: 21em; /* = sidebar width + 7 */
 		}
+
+		body.homepage.left-sidebar #content
+		{
+			margin-left: 24em;
+		}
+
+	body.homepage .box.post
+	{
+		padding: 4.5em;
+	}
+
+	body.homepage .box.post h2
+	{
+		font-size: 4.5em;
+	}
+
+	body.homepage .box.post header
+	{
+		padding: 0;
+		margin: 0 0 2.5em 0;
+	}
+
+	body.homepage .box.post header > p
+	{
+		font-size: 1.35em;
+		line-height: 1.7em;
+		position: static;
+		margin-bottom: 0;
+	}
+
+	body.homepage .box.post .info
+	{
+		left: -8.25em;
+		top: 3.5em;
+		width: 6.5em;
+		padding: 1em;
+		border-radius: 26px;
+	}
 		
 		body.right-sidebar #content
 		{
