@@ -8,11 +8,11 @@
 					titleMain: 'Selected',
 					titleAccent: 'Research Outputs',
 					description: '\u9ed8\u8ba4\u5c55\u793a\u6838\u5fc3\u51fa\u7248\u4fe1\u606f\uff0c\u70b9\u51fb\u9898\u76ee\u53ef\u76f4\u63a5\u5c55\u5f00\u8be6\u60c5\u3002\u9875\u9762\u9ed8\u8ba4\u4e2d\u6587\uff0c\u53ef\u5728\u53f3\u4e0a\u89d2\u5207\u6362\u5230\u82f1\u6587\u3002',
-					authors: '\u4f5c\u8005',
-					published: '\u53d1\u8868\u65f6\u95f4',
-					venue: '\u53d1\u8868\u520a\u7269',
-					paper: '\u8bba\u6587',
-					code: '\u4ee3\u7801'
+					authors: '作者',
+					published: '发表日期',
+					venue: '收录于',
+					paper: '论文',
+					code: '代码'
 				},
 				eng: {
 					section: 'Publications',
