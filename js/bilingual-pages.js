@@ -7,7 +7,7 @@
 					section: 'Publications',
 					titleMain: 'Selected',
 					titleAccent: 'Research Outputs',
-					description: '\u9ed8\u8ba4\u5c55\u793a\u6838\u5fc3\u51fa\u7248\u4fe1\u606f\uff0c\u70b9\u51fb\u9898\u76ee\u53ef\u76f4\u63a5\u5c55\u5f00\u8be6\u60c5\u3002\u9875\u9762\u9ed8\u8ba4\u4e2d\u6587\uff0c\u53ef\u5728\u53f3\u4e0a\u89d2\u5207\u6362\u5230\u82f1\u6587\u3002',
+					description: '展示代表性研究成果，点击标题可查看摘要与相关资源。',
 					authors: '作者',
 					published: '发表日期',
 					venue: '收录于',
@@ -18,7 +18,7 @@
 					section: 'Publications',
 					titleMain: 'Selected',
 					titleAccent: 'Research Outputs',
-					description: 'Compact publication cards with direct bilingual switching. Click a title to reveal the summary, code link, and image.',
+					description: 'A curated selection of representative research outputs. Click a title to view the summary and related resources.',
 					authors: 'Authors',
 					published: 'Published',
 					venue: 'Venue',
@@ -98,14 +98,14 @@
 					section: 'Projects',
 					titleMain: 'Projects',
 					titleAccent: '& Open Repos',
-					description: '\u8fd9\u91cc\u4e0d\u518d\u53ea\u653e\u4f20\u7edf\u7814\u7a76\u9879\u76ee\uff0c\u4e5f\u53ef\u4ee5\u653e\u7cfb\u7edf\u3001\u5de5\u5177\u3001\u4ea7\u54c1\u5b9e\u9a8c\u548c\u5f00\u6e90\u4ed3\u5e93\u3002\u9ed8\u8ba4\u4e2d\u6587\u5c55\u793a\uff0c\u53ef\u5728\u53f3\u4e0a\u89d2\u5207\u6362\u8bed\u8a00\u3002',
+					description: '这里展示项目、系统与开源实践，涵盖研究与工程多种形态。',
 					repo: '\u4ed3\u5e93'
 				},
 				eng: {
 					section: 'Projects',
 					titleMain: 'Projects',
 					titleAccent: '& Open Repos',
-					description: 'This page is not limited to formal research projects. It can host systems, tools, product experiments, and open repositories as well.',
+					description: 'This section showcases projects, systems, and open-source work across both research and engineering.',
 					repo: 'Repository'
 				}
 			},
