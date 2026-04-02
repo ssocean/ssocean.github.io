@@ -135,15 +135,15 @@
 			labels: {
 				cn: {
 					section: 'Awards & Honors',
-					titleMain: 'Heroic',
-					titleAccent: 'Milestones',
-					description: '\u5956\u9879\u4fe1\u606f\u7edf\u4e00\u6536\u7eb3\u4e3a\u5361\u7247\u5c55\u793a\uff0c\u9ed8\u8ba4\u4e2d\u6587\u663e\u793a\uff0c\u53f3\u4e0a\u89d2\u53ef\u5207\u6362\u82f1\u6587\u3002'
+					titleMain: 'Selected',
+					titleAccent: 'Awards',
+					description: '展示所获得的奖项与荣誉情况。'
 				},
 				eng: {
 					section: 'Awards & Honors',
-					titleMain: 'Heroic',
-					titleAccent: 'Milestones',
-					description: 'Awards are presented as hero-style cards with a bilingual switch available in the top-right corner.'
+					titleMain: 'Selected',
+					titleAccent: 'Awards',
+					description: 'A selection of awards and honors received.'
 				}
 			},
 			render: function (item, locale) {

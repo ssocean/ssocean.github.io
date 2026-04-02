@@ -152,8 +152,7 @@
         "eng": "This work targets fine-grained layout analysis in historical Tibetan documents through instance segmentation. By adapting SOLOv2 and improving dataset construction, it enables sub-line level structure recognition and delivers competitive results for complex historical layouts."
       },
       "image": "images/41.png",
-      "paperUrl": "https://ieeexplore.ieee.org/abstract/document/9615155/",
-      "codeUrl": "https://github.com"
+      "paperUrl": "https://ieeexplore.ieee.org/abstract/document/9615155/"
     }
   ]
 }
