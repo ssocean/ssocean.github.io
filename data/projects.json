@@ -60,8 +60,8 @@
     },
     {
       "type": {
-        "cn": "\u5f00\u6e90\u9879\u76ee",
-        "eng": "Open Source"
+        "cn": "商业项目",
+        "eng": "Business"
       },
       "time": {
         "cn": "2024.6 - \u81f3\u4eca",
@@ -69,23 +69,22 @@
       },
       "title": {
         "cn": "\u51cf\u8bba",
-        "eng": "Jianlun"
+        "eng": "Reduct"
       },
-      "description": {
-        "cn": "\u4e00\u4e2a\u6b63\u5728\u6301\u7eed\u6269\u5c55\u7684\u9879\u76ee\u7a7a\u95f4\uff0c\u53ef\u4ee5\u7528\u6765\u653e\u4ea7\u54c1\u3001\u5de5\u5177\u94fe\u6216\u5f00\u6e90 Repo\uff0c\u800c\u4e0d\u53ea\u662f\u4f20\u7edf\u610f\u4e49\u4e0a\u7684\u7814\u7a76\u9879\u76ee\u3002",
-        "eng": "An evolving project space that can represent a product, a toolchain, or an open repository rather than only a conventional academic project entry."
-      },
+    "description": {
+      "cn": "一个面向智能科研时代的文献与人才连接平台，融合学术内容分发、研究交流与成长体系，既服务科研信息获取与理解，也支持研究者之间的协作与价值流动，逐步演化为科研工作流中的基础设施。",
+      "eng": "A platform designed for the era of intelligent research, integrating literature intelligence, knowledge distribution, and talent networking. It supports not only access and understanding of scientific content but also collaboration and value exchange among researchers, evolving toward a foundational layer of the research workflow."
+    },
       "chips": {
         "cn": [
-          "\u8d1f\u8d23\u4eba\uff1a\u8d75\u9e4f\u6d77",
-          "Repo-ready"
+          "联合创始人"
         ],
         "eng": [
-          "Owner: Penghai Zhao",
-          "Repo-ready"
+          "Co-founder"
         ]
       },
-      "image": "images/system.gif"
+      "image": "images/system.gif",
+      "repoUrl": "https://www.reduct.cn/"
     }
   ]
 }
