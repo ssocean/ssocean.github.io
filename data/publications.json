@@ -24,7 +24,7 @@
           },
           "image": "images/naipv2.png",
           "paperUrl": "https://arxiv.org/abs/2509.25179",
-          "codeUrl": "https://github.com/ssocean/NAIP"
+          "repoUrl": "https://github.com/ssocean/NAIP"
         },
     {
       "year": "2025",
@@ -50,7 +50,7 @@
       },
       "image": "images/aip.png",
       "paperUrl": "https://arxiv.org/abs/2408.03934",
-      "codeUrl": "https://github.com/ssocean/NAIP"
+      "repoUrl": "https://github.com/ssocean/NAIP"
     },
     {
       "year": "2024",
@@ -76,7 +76,7 @@
       },
       "image": "images/ripami.png",
       "paperUrl": "https://arxiv.org/abs/2402.12928",
-      "codeUrl": "https://github.com/ssocean/pybiblion"
+      "repoUrl": "https://github.com/ssocean/pybiblion"
     },
     {
       "year": "2022",
@@ -127,7 +127,7 @@
       },
       "image": "images/u-net.png",
       "paperUrl": "https://link.springer.com/article/10.1007/s00521-021-06512-7",
-      "codeUrl": "https://github.com/ssocean/UNet-Binarization"
+      "repoUrl": "https://github.com/ssocean/UNet-Binarization"
     },
     {
       "year": "2021",
