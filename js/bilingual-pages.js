@@ -27,6 +27,10 @@
 				}
 			},
 			render: function (item, locale, labels) {
+				var repoLabel = locale === 'eng' ? 'resource url' : '资源链接';
+				var resourceLink = item.repoUrl
+					? '<a class="publication-link" href="' + escapeAttr(item.repoUrl) + '" target="_blank" rel="noopener noreferrer">' + repoLabel + '</a>'
+					: '';
 				return '' +
 					'<article class="publication-card">' +
 						'<button class="publication-toggle" type="button" aria-expanded="false">' +
@@ -59,7 +63,7 @@
 										'<p>' + escapeHtml(item.summary[locale]) + '</p>' +
 										'<div class="publication-links">' +
 											'<a class="publication-link" href="' + escapeAttr(item.paperUrl) + '" target="_blank" rel="noopener noreferrer">' + labels.paper + '</a>' +
-											'<a class="publication-link" href="' + escapeAttr(item.codeUrl) + '" target="_blank" rel="noopener noreferrer">' + labels.code + ': github.com</a>' +
+											resourceLink +
 										'</div>' +
 									'</div>' +
 									'<div class="publication-figure">' +
@@ -112,6 +116,12 @@
 			render: function (item, locale, labels) {
 				var chips = item.chips[locale] || [];
 				var chipsHtml = '';
+				var repoLabel = locale === 'eng' ? 'resource url' : '资源链接';
+				var projectLinksHtml = item.repoUrl
+					? '<div class="project-links">' +
+						'<a class="project-link" href="' + escapeAttr(item.repoUrl) + '" target="_blank" rel="noopener noreferrer">' + repoLabel + '</a>' +
+					'</div>'
+					: '';
 				for (var i = 0; i < chips.length; i++) {
 					chipsHtml += '<span class="project-chip">' + escapeHtml(chips[i]) + '</span>';
 				}
@@ -124,9 +134,7 @@
 						'<h2 class="project-title">' + escapeHtml(item.title[locale]) + '</h2>' +
 						'<p class="project-desc">' + escapeHtml(item.description[locale]) + '</p>' +
 						'<div class="project-meta">' + chipsHtml + '</div>' +
-						'<div class="project-links">' +
-							'<a class="project-link" href="' + escapeAttr(item.repoUrl) + '" target="_blank" rel="noopener noreferrer">' + labels.repo + ': github.com</a>' +
-						'</div>' +
+						projectLinksHtml +
 					'</article>';
 			}
 		},
