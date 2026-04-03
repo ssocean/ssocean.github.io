@@ -12,10 +12,41 @@ window.bioPhotos = [
 		location: 'Ulanqab, China'
 	},
 	{
-		src: 'bio/pic01.jpg',
+		src: 'bio/pic03.jpg',
+		alt: 'Tianjin, China',
+		date: 'May 2 2024',
+		location: 'Tianjin, China'
+	},
+	{
+		src: 'bio/pic04.jpg',
 		alt: 'NTU, Singapore',
 		date: 'June 17 2023',
 		location: 'NTU, Singapore'
 	},
+	{
+		src: 'bio/pic05.jpg',
+		alt: 'Macau, China',
+		date: 'October 2 2024',
+		location: 'Macau, China'
+	},
+	{
+		src: 'bio/pic07.jpg',
+		alt: 'Beijing, China',
+		date: 'January 14 2024',
+		location: 'Beijing, China'
+	},
+	{
+		src: 'bio/pic08.jpg',
+		alt: 'Chifeng, China',
+		date: 'October 9 2025',
+		location: 'Chifeng, China'
+	},
+	{
+		src: 'bio/pic09.png',
+		alt: 'Qufu, China',
+		date: 'August 31 2025',
+		location: 'Qufu, China'
+	},
+
 
 ];
