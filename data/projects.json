@@ -2,7 +2,7 @@
   "items": [
     {
       "type": {
-        "cn": "\u7814\u7a76\u9879\u76ee",
+        "cn": "研究项目",
         "eng": "Research"
       },
       "time": {
@@ -10,17 +10,17 @@
         "eng": "2018.1 - 2021.12"
       },
       "title": {
-        "cn": "\u4e4c\u91d1\u4f53\u85cf\u6587\u53e4\u7c4d\u6587\u6863\u5206\u6790\u4e0e\u8bc6\u522b\u7814\u7a76",
+        "cn": "乌金体藏文古籍文档分析与识别研究",
         "eng": "Analysis and Recognition of Uchen Tibetan Historical Documents"
       },
       "description": {
-        "cn": "\u56fd\u5bb6\u81ea\u7136\u79d1\u5b66\u57fa\u91d1\u9879\u76ee\uff0c\u805a\u7126\u4e8e\u4e4c\u91d1\u4f53\u85cf\u6587\u53e4\u7c4d\u6587\u6863\u7684\u7248\u9762\u5206\u6790\u3001\u56fe\u50cf\u7406\u89e3\u4e0e\u6587\u672c\u8bc6\u522b\u95ee\u9898\u3002",
+        "cn": "国家自然科学基金项目，聚焦于乌金体藏文古籍文档的版面分析、图像理解与文本识别问题。",
         "eng": "A National Natural Science Foundation project focused on layout analysis, image understanding, and text recognition for Uchen Tibetan historical documents."
       },
       "chips": {
         "cn": [
           "No.61772430",
-          "\u4e3b\u6301\u4eba\uff1a\u738b\u7ef4\u5170"
+          "主持人：王维兰"
         ],
         "eng": [
           "No.61772430",
@@ -31,7 +31,7 @@
     },
     {
       "type": {
-        "cn": "\u7cfb\u7edf\u5de5\u7a0b",
+        "cn": "系统工程",
         "eng": "System"
       },
       "time": {
@@ -39,17 +39,17 @@
         "eng": "2021.3 - 2022.3"
       },
       "title": {
-        "cn": "\u85cf\u6587\u53e4\u7c4d\u6587\u6863\u56fe\u50cf\u8bc6\u522b\u7cfb\u7edf\u96c6\u6210\u5f00\u53d1",
+        "cn": "藏文古籍文档图像识别系统集成开发",
         "eng": "Integrated Development of a Tibetan Historical Document Recognition System"
       },
       "description": {
-        "cn": "\u897f\u5317\u6c11\u65cf\u5927\u5b66\u7814\u7a76\u751f\u521b\u65b0\u56e2\u961f\u9879\u76ee\uff0c\u5c06\u85cf\u6587\u53e4\u7c4d\u6587\u6863\u8bc6\u522b\u80fd\u529b\u4e0e\u5b9e\u9645\u7cfb\u7edf\u5de5\u7a0b\u96c6\u6210\u7ed3\u5408\u5728\u4e00\u8d77\u3002",
+        "cn": "西北民族大学研究生创新团队项目，将藏文古籍文档识别能力与实际系统工程集成结合在一起。",
         "eng": "A graduate innovation team project that integrates Tibetan historical document recognition capability into a practical engineering system."
       },
       "chips": {
         "cn": [
           "Yxm2021002",
-          "\u4e3b\u6301\u4eba\uff1a\u8d75\u9e4f\u6d77"
+          "主持人：赵鹏海"
         ],
         "eng": [
           "Yxm2021002",
@@ -64,17 +64,17 @@
         "eng": "Business"
       },
       "time": {
-        "cn": "2024.6 - \u81f3\u4eca",
+        "cn": "2024.6 - 至今",
         "eng": "2024.6 - Present"
       },
       "title": {
-        "cn": "\u51cf\u8bba",
+        "cn": "减论",
         "eng": "Reduct"
       },
-    "description": {
-      "cn": "一个面向智能科研时代的文献与人才连接平台，融合学术内容分发、研究交流与成长体系，既服务科研信息获取与理解，也支持研究者之间的协作与价值流动，逐步演化为科研工作流中的基础设施。",
-      "eng": "A platform designed for the era of intelligent research, integrating literature intelligence, knowledge distribution, and talent networking. It supports not only access and understanding of scientific content but also collaboration and value exchange among researchers, evolving toward a foundational layer of the research workflow."
-    },
+      "description": {
+        "cn": "一个面向智能科研时代的文献与人才连接平台，融合学术内容分发、研究交流与成长体系，既服务科研信息获取与理解，也支持研究者之间的协作与价值流动，逐步演化为科研工作流中的基础设施。",
+        "eng": "A platform designed for the era of intelligent research, integrating literature intelligence, knowledge distribution, and talent networking. It supports not only access and understanding of scientific content but also collaboration and value exchange among researchers, evolving toward a foundational layer of the research workflow."
+      },
       "chips": {
         "cn": [
           "联合创始人"

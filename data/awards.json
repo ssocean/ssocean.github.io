@@ -3,11 +3,11 @@
     {
       "year": "2020",
       "title": {
-        "cn": "\u5168\u56fd\u5927\u5b66\u751f\u82f1\u8bed\u7ade\u8d5b\uff08NECCS\uff09",
+        "cn": "全国大学生英语竞赛（NECCS）",
         "eng": "National English Competition for College Students (NECCS)"
       },
       "tier": {
-        "cn": "\u56fd\u5bb6\u7ea7\u4e00\u7b49\u5956",
+        "cn": "国家级一等奖",
         "eng": "National First Prize"
       },
       "image": "images/pic01.jpg"
@@ -15,11 +15,11 @@
     {
       "year": "2021",
       "title": {
-        "cn": "\u9996\u5c4a\u4e2d\u56fd\u56fe\u50cf\u56fe\u5f62\u5b66\u62a5\u7814\u7a76\u751f\u5b66\u672f\u8bba\u575b\u62a5\u544a",
+        "cn": "首届中国图象图形学报研究生学术论坛报告",
         "eng": "First Graduate Academic Forum Presentation of Journal of Image and Graphics"
       },
       "tier": {
-        "cn": "\u56fd\u5bb6\u5b66\u4f1a\u7ea7\u4f18\u79c0\u5956",
+        "cn": "国家学会级优秀奖",
         "eng": "National Society-Level Outstanding Award"
       },
       "image": "images/pic01.jpg"
@@ -27,11 +27,11 @@
     {
       "year": "2021",
       "title": {
-        "cn": "\u7b2c\u4e8c\u5c4a\u5168\u56fd\u9ad8\u6821\u8ba1\u7b97\u673a\u80fd\u529b\u6311\u6218\u8d5b",
+        "cn": "第二届全国高校计算机能力挑战赛",
         "eng": "Second National Collegiate Computer Ability Challenge"
       },
       "tier": {
-        "cn": "\u7701\u7ea7\u4e8c\u7b49\u5956",
+        "cn": "省级二等奖",
         "eng": "Provincial Second Prize"
       },
       "image": "images/pic01.jpg"
@@ -39,11 +39,11 @@
     {
       "year": "2020",
       "title": {
-        "cn": "\u201c\u4e92\u8054\u7f51+\u201d\u5927\u5b66\u751f\u521b\u65b0\u521b\u4e1a\u5927\u8d5b",
+        "cn": "“互联网+”大学生创新创业大赛",
         "eng": "\"Internet Plus\" Innovation and Entrepreneurship Competition for College Students"
       },
       "tier": {
-        "cn": "\u6821\u7ea7\u4e00\u7b49\u5956",
+        "cn": "校级一等奖",
         "eng": "University First Prize"
       },
       "image": "images/pic01.jpg"
@@ -51,11 +51,11 @@
     {
       "year": "2022",
       "title": {
-        "cn": "\u300a\u4e4c\u91d1\u4f53\u85cf\u6587\u6587\u6863\u7248\u9762\u5206\u6790\u4e0e\u8bc6\u522b\u7cfb\u7edf\u300b",
+        "cn": "《乌金体藏文文档版面分析与识别系统》",
         "eng": "\"Uchen Tibetan Document Layout Analysis and Recognition System\""
       },
       "tier": {
-        "cn": "\u4f18\u79c0\u6bd5\u4e1a\u8bba\u6587",
+        "cn": "优秀毕业论文",
         "eng": "Outstanding Graduation Thesis"
       },
       "image": "images/pic01.jpg"
@@ -63,11 +63,11 @@
     {
       "year": "2022",
       "title": {
-        "cn": "\u7ca4\u6e2f\u6fb3\u5927\u6e7e\u533a\u7b97\u6cd5\u7b97\u4f8b\u5927\u8d5b\u00b7\u53e4\u7c4d\u6587\u6863\u8bc6\u522b\u8d5b\u9053",
+        "cn": "粤港澳大湾区算法算例大赛·古籍文档识别赛道",
         "eng": "Greater Bay Area Algorithm Case Competition - Historical Document Recognition Track"
       },
       "tier": {
-        "cn": "\u5168\u56fd\u7b2c\u4e09\u540d\uff08\u5956\u91d14\u4e07\u5143\uff09",
+        "cn": "全国第三名（奖金4万元）",
         "eng": "National Third Place (RMB 40,000 Prize)"
       },
       "image": "images/pic01.jpg"

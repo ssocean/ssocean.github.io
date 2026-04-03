@@ -84,11 +84,11 @@
 							</div>
 							<div class="hero-visual reveal-on-load delay-1">
 								<div class="portrait-frame">
-									<img src="images/pic01.jpg" alt="In New-Zealand with his wife." />
+									<img id="hero-photo" src="bio/pic01.jpg" alt="In New-Zealand with his wife." />
 								</div>
-								<div class="floating-note">
-									<p class="label">June 17 2023</p>
-									<p>Christchurch, New Zealand</p>
+								<div class="floating-note" id="hero-photo-note">
+									<p class="label" id="hero-photo-date">June 17 2023</p>
+									<p id="hero-photo-location">Christchurch, New Zealand</p>
 								</div>
 							</div>
 						</section>
@@ -142,8 +142,24 @@
 			</div>
 		</div>
 
+		<script src="bio/photos.js"></script>
 		<script src="js/homepage.js"></script>
 		<script src="js/sidebar-widgets.js"></script>
+		<script>
+			(function () {
+				var photos = window.bioPhotos || [];
+				var heroPhoto = document.getElementById('hero-photo');
+				var heroPhotoDate = document.getElementById('hero-photo-date');
+				var heroPhotoLocation = document.getElementById('hero-photo-location');
+				if (!photos.length || !heroPhoto || !heroPhotoDate || !heroPhotoLocation) return;
+
+				var selected = photos[Math.floor(Math.random() * photos.length)];
+				heroPhoto.src = selected.src;
+				heroPhoto.alt = selected.alt || '';
+				heroPhotoDate.textContent = selected.date || '';
+				heroPhotoLocation.textContent = selected.location || '';
+			})();
+		</script>
 		<script>
 			(function () {
 				var heroVisual = document.querySelector('.hero-visual');
