@@ -31,9 +31,9 @@ window.bioPhotos = [
 	},
 	{
 		src: 'bio/pic07.jpg',
-		alt: 'Beijing, China',
+		alt: 'Zhuhai, China',
 		date: 'January 14 2024',
-		location: 'Beijing, China'
+		location: 'Zhuhai, China'
 	},
 	{
 		src: 'bio/pic08.jpg',
