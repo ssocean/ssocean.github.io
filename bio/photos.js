@@ -29,10 +29,16 @@ window.bioPhotos = [
 		date: 'October 2 2024',
 		location: 'Macau, China'
 	},
+		{
+		src: 'bio/pic06.jpg',
+		alt: 'Beijing, China',
+		date: 'January 14 2024',
+		location: 'Beijing, China'
+	},
 	{
 		src: 'bio/pic07.jpg',
 		alt: 'Zhuhai, China',
-		date: 'January 14 2024',
+		date: 'June 5 2025',
 		location: 'Zhuhai, China'
 	},
 	{
@@ -46,6 +52,12 @@ window.bioPhotos = [
 		alt: 'Qufu, China',
 		date: 'August 31 2025',
 		location: 'Qufu, China'
+	},
+	{
+		src: 'bio/pic10.jpg',
+		alt: 'New York, USA',
+		date: 'February 25 2025',
+		location: 'New York, USA'
 	},
 
 
